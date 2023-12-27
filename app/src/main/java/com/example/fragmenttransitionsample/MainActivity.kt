@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 R.anim.fade_in,
                 R.anim.slide_out
             )
-            .replace(R.id.fl_fragment_wrapper, fragment)        // replace() 메소드를 사용하면 결과가 다를까?
+            .add(R.id.fl_fragment_wrapper, fragment)        // replace() 메소드를 사용하면 결과가 다를까?
             .addToBackStack(null)
             .commit()
     }
