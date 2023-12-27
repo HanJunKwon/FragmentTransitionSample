@@ -20,9 +20,6 @@ private const val ARG_PARAM2 = "param2"
 class AFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val inflater = TransitionInflater.from(requireContext())
-        exitTransition = inflater.inflateTransition(R.transition.fade)
     }
 
     override fun onCreateView(
